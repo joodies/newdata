@@ -1,0 +1,7 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+/.idea
+assets/post_resource/snapmail.mp4
+assets/post_resource/snapmail.webm
