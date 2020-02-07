@@ -5,7 +5,7 @@
     {% assign page_paths = site.header_pages | default: default_paths %}
 
     {% if page.layout != 'home888' %}
-      <a class="site-title" href="{{ "/" | relative_url }}"><i style="padding-right: 8px" class="fa fa-envelope a"></i> Snapmail.cc</a>
+      <a class="site-title" href="{{ "/" | relative_url }}"><i style="padding-right: 8px" class="fa fa-envelope a"></i> Lista.cc</a>
     {% endif %}
 
     {% if page_paths %}
@@ -22,7 +22,6 @@
         </label>
 
         <div class="trigger">
-          <a class="page-link" target="_blank" href="https://www.snapmail.cc">{{site.data.i18n['try'][page.lang]}} Snapmail</a>
           {% for path in page_paths %}
             {% assign my_page = site.pages| where: "lang", page.lang | where: "path", path | first %}
             {% if my_page.title %}
@@ -65,6 +64,6 @@
   }
 
   function changeLang(value) {
-    location.href = location.href.replace('/blog/{{page.lang}}', '/blog/' + value)
+    location.href = location.href.replace('/{{page.lang}}', value)
   }
 </script>
