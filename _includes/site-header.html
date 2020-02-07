@@ -52,12 +52,12 @@
   </div>
 </header>
 <script>
-  var _lang = ('{{page.lang}}' === 'en' || '{{page.lang}}' === 'zh' || '{{page.lang}}' === 'ja') ? '{{page.lang}}' : ''
+  var _lang = ('{{page.lang}}' === 'en' || '{{page.lang}}' === 'zh') ? '{{page.lang}}' : ''
   if (_lang !== '') {
     window.localStorage.lang = _lang
   }
 
   function changeLang(value) {
-    location.href = location.href.replace('/{{page.lang}}', value)
+    location.href = location.href.replace('/{{page.lang}}', '/' + value)
   }
 </script>
