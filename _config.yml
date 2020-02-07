@@ -1,6 +1,6 @@
-title: The fastest way to get an email address! #博客标题
+title: ! #博客标题
 description:  #博客描述
-keywords: free, temporary, email, disposable, mail, email address, wildcard email, prefix email #博客关键字
+keywords: free #博客关键字
 author: "Lista"
 
 #title hide and show
@@ -18,7 +18,7 @@ PJAX: false #启用PJAX，会与评论系统冲突（如不用评论系统建议
 paginate: 8 #同时显示的最大文章数，超过自动分页
 #paginate_path: "en/page:num"
 
-background: /assets/image/email.png
+background:
 theme_color: 0078d4
 
 google_analytics: UA-112881065-1

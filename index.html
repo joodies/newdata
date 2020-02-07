@@ -5,7 +5,7 @@
     <script type="text/javascript">
       if (window.localStorage.lang) {
         var _lang = window.localStorage.lang
-        _lang = (_lang === 'en' || _lang === 'zh' || _lang === 'ja') ? _lang : 'en'
+        _lang = (_lang === 'en' || _lang === 'zh') ? _lang : 'en'
         window.location.replace(_lang);
       } else {
         var lang = navigator.language || navigator.userLanguage;
